@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SANBOURGG is Gurugram's cloud kitchen for loaded burgers, grilled sandwiches, fries, and shakes. Order now on WhatsApp." />
+  <title>SANBOURGG | Stacked. Grilled. Served.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="SANBOURGG home">
+        <span class="brand-main">SANBOUR<span>GG</span></span>
+        <span class="brand-tag">Stacked. Grilled. Served.</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-sm" href="https://wa.me/919015170007" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Cloud Kitchen | Gurugram</p>
+          <h1>Loaded Burgers and Grilled Sandwiches, made fresh and delivered hot.</h1>
+          <p class="hero-copy">SANBOURGG serves premium street-gourmet comfort food with bold flavors, crispy textures, and signature sauces. Perfect for quick lunches, late-night cravings, and office orders.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://wa.me/919015170007" target="_blank" rel="noopener noreferrer">WhatsApp: 90151 70007</a>
+            <a class="btn btn-outline" href="#menu">Explore Menu</a>
+          </div>
+          <ul class="hero-points">
+            <li>Takeaway and delivery available</li>
+            <li>Prices inclusive of taxes</li>
+            <li>Veg and non-veg options</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/logo-primary.jpg" alt="SANBOURGG logo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Food Menu</p>
+          <h2>Pick by category or ingredient</h2>
+          <p>Use quick filters to discover burgers, sandwiches, sides, and shakes based on your mood.</p>
+        </div>
+
+        <div class="filters" aria-label="Menu filters">
+          <div class="filter-row" id="categoryFilters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="burger">Burgers</button>
+            <button class="chip" data-filter="sandwich">Sandwiches</button>
+            <button class="chip" data-filter="sides">Sides</button>
+            <button class="chip" data-filter="shake">Shakes</button>
+          </div>
+          <div class="filter-row" id="tagFilters">
+            <button class="chip active" data-tag="all">Any Ingredient</button>
+            <button class="chip" data-tag="veg">Veg</button>
+            <button class="chip" data-tag="chicken">Chicken</button>
+            <button class="chip" data-tag="cheese">Cheese</button>
+            <button class="chip" data-tag="spicy">Spicy</button>
+            <button class="chip" data-tag="protein">Protein</button>
+          </div>
+          <label class="search-wrap" for="menuSearch">
+            <span>Search menu</span>
+            <input id="menuSearch" type="search" placeholder="Try: smoky, fries, oreo..." />
+          </label>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-card" data-category="burger" data-tags="chicken cheese">
+            <h3>The OG Sanbourgg</h3>
+            <p>Classic grilled patty, cheese, and house sauce in a toasted bun.</p>
+            <div class="meta"><span>Regular: INR 149</span><span>Double: INR 189</span></div>
+          </article>
+
+          <article class="menu-card" data-category="burger" data-tags="chicken cheese protein">
+            <h3>Double Stack Sanbourgg</h3>
+            <p>Two patties, double cheese, and a rich layered bite.</p>
+            <div class="meta"><span>Regular: INR 199</span><span>Double: INR 249</span></div>
+          </article>
+
+          <article class="menu-card" data-category="burger" data-tags="chicken">
+            <h3>Smokey Grill Chicken</h3>
+            <p>Charcoal grilled chicken with smoked mayo.</p>
+            <div class="meta"><span>INR 199</span></div>
+          </article>
+
+          <article class="menu-card" data-category="burger" data-tags="chicken spicy">
+            <h3>Inferno Chicken</h3>
+            <p>Spicy chicken patty, jalapenos, and hot sauce.</p>
+            <div class="meta"><span>INR 209</span></div>
+          </article>
+
+          <article class="menu-card" data-category="burger" data-tags="veg cheese">
+            <h3>Green Crunch (Veg)</h3>
+            <p>Crispy veg patty with fresh lettuce and cheese.</p>
+            <div class="meta"><span>INR 169</span></div>
+          </article>
+
+          <article class="menu-card" data-category="sandwich" data-tags="cheese">
+            <h3>Classic Melt</h3>
+            <p>Comforting grilled sandwich with melty layers.</p>
+            <div class="meta"><span>INR 129</span></div>
+          </article>
+
+          <article class="menu-card" data-category="sandwich" data-tags="protein cheese">
+            <h3>Grill Stack Sandwich</h3>
+            <p>Crisp-grilled stack with smoky and cheesy notes.</p>
+            <div class="meta"><span>INR 149</span></div>
+          </article>
+
+          <article class="menu-card" data-category="sandwich" data-tags="veg cheese">
+            <h3>Cheese Press</h3>
+            <p>Golden-pressed sandwich for pure cheese lovers.</p>
+            <div class="meta"><span>INR 139</span></div>
+          </article>
+
+          <article class="menu-card" data-category="sandwich" data-tags="protein">
+            <h3>Power Protein Sandwich</h3>
+            <p>High-satiety sandwich built for hunger-heavy days.</p>
+            <div class="meta"><span>INR 169</span></div>
+          </article>
+
+          <article class="menu-card" data-category="sides" data-tags="veg">
+            <h3>Sanbourgg Fries</h3>
+            <p>Classic salted fries, crispy outside and fluffy inside.</p>
+            <div class="meta"><span>INR 99</span></div>
+          </article>
+
+          <article class="menu-card" data-category="sides" data-tags="veg cheese">
+            <h3>Loaded Cheese Fries</h3>
+            <p>Hot fries finished with creamy cheese loading.</p>
+            <div class="meta"><span>INR 139</span></div>
+          </article>
+
+          <article class="menu-card" data-category="sides" data-tags="cheese">
+            <h3>Cheese Bomb Bites</h3>
+            <p>Crunchy bites with a rich molten center.</p>
+            <div class="meta"><span>INR 149</span></div>
+          </article>
+
+          <article class="menu-card" data-category="shake" data-tags="">
+            <h3>House Chocolate Shake</h3>
+            <p>Thick chocolate shake with signature house profile.</p>
+            <div class="meta"><span>INR 129</span></div>
+          </article>
+
+          <article class="menu-card" data-category="shake" data-tags="">
+            <h3>Cold Coffee Stack</h3>
+            <p>Smooth cold coffee for all-day caffeine cravings.</p>
+            <div class="meta"><span>INR 119</span></div>
+          </article>
+
+          <article class="menu-card" data-category="shake" data-tags="">
+            <h3>Oreo Blast</h3>
+            <p>Creamy cookies-and-cream style premium shake.</p>
+            <div class="meta"><span>INR 149</span></div>
+          </article>
+
+          <article class="menu-card" data-category="shake" data-tags="">
+            <h3>Fresh Lime Fizz</h3>
+            <p>Citrusy sparkle for a clean palate reset.</p>
+            <div class="meta"><span>INR 69</span></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>No menu item matches your filters. Try resetting ingredient or search.</p>
+
+        <div class="addon-bar">
+          <p><strong>Add-ons:</strong> Extra Cheese INR 30 | Extra Patty INR 50</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Why SANBOURGG</p>
+          <h2>Built for delivery-first speed without compromising taste.</h2>
+          <p>We are a cloud kitchen focused on consistency, hygiene, and bold flavor. Our kitchen process is tuned for quick dispatch and premium packaging, so your meal arrives exactly the way it should.</p>
+          <ul>
+            <li>Fresh prep and grill-to-order flow</li>
+            <li>Premium sauces and quality ingredients</li>
+            <li>Optimized for office and family meal orders</li>
+          </ul>
+        </div>
+        <div class="brand-showcase">
+          <img src="assets/logo-board.jpg" alt="SANBOURGG brand presentation" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Order & Contact</p>
+          <h2>Ready to taste SANBOURGG?</h2>
+          <p>Call or WhatsApp us for direct orders and bulk enquiries.</p>
+          <p><strong>Phone / WhatsApp:</strong> <a href="tel:+919015170007">+91 90151 70007</a></p>
+          <p><strong>Address:</strong> C291, Sai Kunj, New Palam Vihar 3, Gurugram 122017</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://wa.me/919015170007" target="_blank" rel="noopener noreferrer">Start WhatsApp Order</a>
+            <a class="btn btn-outline" href="https://maps.google.com/?q=C291%20Sai%20Kunj%20New%20Palam%20Vihar%203%20Gurugram%20122017" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+          </div>
+        </div>
+        <img src="assets/logo-variant.jpg" alt="SANBOURGG logo variation" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>SANBOURGG | Crafted Burgers & Sandwiches</p>
+      <p>Copyright <span id="year"></span> SANBOURGG. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
